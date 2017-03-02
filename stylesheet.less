@@ -18,19 +18,7 @@
 // -----------------------------
 
 @import "@{templateCommon}/bk-less-framework-v8.less"; // BaseKit LESS Framework
-//@import "@{templateLocal}/bk-v8-test.less";
-@import "@{templateLocal}/less/variables.less";
 
-// Template Includes
-@import "@{templateLocal}/less/theme.less"; // Theme
-@import "@{templateLocal}/less/widgets.less"; // Widgets
-@import "@{templateLocal}/less/mixins.less"; // Mixins
-@import "@{templateLocal}/less/navigation.less"; // Navigation
-
-// Plugin Includes
-@import "@{templateLocal}/less/plugins/plugin-blog.less"; // Plugin: Blog CSS
-@import "@{templateLocal}/less/plugins/plugin-menu.less"; // Plugin: Menu CSS
-@import "@{templateLocal}/less/plugins/plugin-ecommerce.less"; // Plugin: Ecommerce CSS
 
 
 
@@ -41,7 +29,7 @@
 
 
 body {
-    background-image:url('../images/image.jpg'); 
+    background-image:image('/images/image.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -83,6 +71,7 @@ body {
 
     text-align: center;
     padding: 0 5%;
+    max-width: 1300px;
     h1 {
         @media @tablet {
             font-size: bkscale(@font-swatch1-font-size, .7);
