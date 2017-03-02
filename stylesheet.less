@@ -1,0 +1,96 @@
+// --------------------------------
+// BaseKit Baseplate Theme (v1.0)
+// --------------------------------
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #LESS INCLUDES
+// 2. #PAGE SETTINGS
+// 3. #TEMPLATE STYLES
+
+
+
+
+// -----------------------------
+// 1. #LESS Includes
+// -----------------------------
+
+@import "@{templateCommon}/bk-less-framework-v8.less"; // BaseKit LESS Framework
+//@import "@{templateLocal}/bk-v8-test.less";
+@import "@{templateLocal}/less/variables.less";
+
+// Template Includes
+@import "@{templateLocal}/less/theme.less"; // Theme
+@import "@{templateLocal}/less/widgets.less"; // Widgets
+@import "@{templateLocal}/less/mixins.less"; // Mixins
+@import "@{templateLocal}/less/navigation.less"; // Navigation
+
+// Plugin Includes
+@import "@{templateLocal}/less/plugins/plugin-blog.less"; // Plugin: Blog CSS
+@import "@{templateLocal}/less/plugins/plugin-menu.less"; // Plugin: Menu CSS
+@import "@{templateLocal}/less/plugins/plugin-ecommerce.less"; // Plugin: Ecommerce CSS
+
+
+
+
+// -----------------------------
+// 2. #Page Settings **
+// -----------------------------
+
+
+body {
+    background-image:url('../images/image.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.text {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+
+    text-align: center;
+    padding: 0 5%;
+    h1 {
+        @media @tablet {
+            font-size: bkscale(@font-swatch1-font-size, .7);
+            line-height: bkscale(@font-swatch1-line-height, .7);
+        }
+        @media @mobile {
+            font-size: bkscale(@font-swatch1-font-size, .6);
+            line-height: bkscale(@font-swatch1-line-height, .6);
+        }
+    }
+}

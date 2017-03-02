@@ -1,0 +1,18 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="text-container">
+
+<div class="text">
+
+	{{widget('content', 'text', {
+  		content: '<h1>You have safely logged out of the BaseKit Sitebuilder. 
+		To log back in, please return to your Plesk control panel.</h1>'
+	})|raw}}
+
+</div>
+
+</div>
+
+{% endblock %}

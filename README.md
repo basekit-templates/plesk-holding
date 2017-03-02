@@ -1,2 +1,4 @@
-# plesk-holding
-Plesk holding page template
+Trivial
+=========
+
+BaseKit V8 Template
